@@ -9,15 +9,13 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+Nome: Mateus Souza Campos
+Matricula: 896645
+Proposta de projeto escolhida: Página de noticias.
 
 **Print da tela com a implementação**
+![prin1](prints/print1.png)
+![print2](prints/print2.png)
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Na página de apresentação, fiz um gráfico de barras para mostrar o número de notícias dos 3 clubes exibidos no site.
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
-
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
