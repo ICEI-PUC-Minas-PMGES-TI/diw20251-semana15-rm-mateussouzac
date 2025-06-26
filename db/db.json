@@ -1,80 +1,4 @@
 {
-  "jogadores": [
-    {
-      "id": 1,
-      "nome": "Gabriel Barbosa",
-      "time": "Cruzeiro",
-      "posicao": "Atacante"
-    },
-    {
-      "id": 2,
-      "nome": "Dudu",
-      "time": "Atlético",
-      "posicao": "Meia"
-    },
-    {
-      "id": 3,
-      "nome": "Kaio Jorge",
-      "time": "Cruzeiro",
-      "posicao": "Atacante"
-    }
-  ],
-  "noticias": [
-    {
-      "id": 1,
-      "titulo": "Estreia com vitória na Copa do Brasil",
-      "resumo": "Com show de Kaio Jorge o Cruzeiro vence o Vila Nova no Mineirão.",
-      "imagem": "/fotos/kaiojorge.png",
-      "dataPublicacao": "04 de maio de 2025",
-      "time": "Cruzeiro",
-      "conteudo": "O Cruzeiro estreou com vitória segura na Copa do Brasil, batendo o Vila Nova por 2 a 0 no Mineirão. A partida não reservou grandes sustos para a torcida celeste, que viu o atacante Kaio Jorge brilhar novamente, marcando os dois gols da vitória com belos lances. O camisa nove segue sendo decisivo para a equipe."
-    },
-    {
-      "id": 2,
-      "titulo": "Dudu pode pintar no Galo!",
-      "resumo": "A pedido de Cuca, Dudu pode jogar no Atlético MG",
-      "imagem": "/fotos/dudu.png",
-      "dataPublicacao": "04 de maio de 2025",
-      "time": "Atlético",
-      "conteudo": "Após rescindir seu contrato com o Cruzeiro em meio a conflitos com a diretoria e o técnico Leonardo Jardim, o atacante Dudu pode ter um novo destino: o rival Atlético Mineiro. O técnico Cuca, que já trabalhou com o jogador no Palmeiras, teria feito um pedido à diretoria atleticana para contar com o atacante em seu elenco. A possível transferência agita o cenário do futebol mineiro."
-    },
-    {
-      "id": 3,
-      "titulo": "América tem compromisso fora de casa",
-      "resumo": "América Busca Reabilitação Fora de Casa Contra o Operário.",
-      "imagem": "/fotos/americamg.png",
-      "dataPublicacao": "04 de maio de 2025",
-      "time": "América",
-      "conteudo": "América Busca Reabilitação Fora de Casa Contra o Operário. De Olho no Acesso, com o objetivo claro de retornar à elite do futebol brasileiro, o América enfrenta o Operário fora de casa em busca de uma vitória crucial. O Coelho precisa quebrar a sequência de resultados negativos longe de seus domínios para manter vivo o sonho do acesso à primeira divisão. A partida acontece hoje, 04 de maio, às 20h30, e terá transmissão ao vivo pelo Disney +."
-    },
-    {
-      "id": 4,
-      "titulo": "Gabigol reencontra Flamengo!",
-      "resumo": "O Mineirão será palco de um reencontro emocionante hoje, às 20h30, pela sétima rodada do Brasileirão.",
-      "imagem": "/fotos/gabigol.png",
-      "dataPublicacao": "04 de maio de 2025",
-      "time": "Cruzeiro",
-      "conteudo": "O Mineirão será palco de um reencontro emocionante hoje, às 20h30, pela sétima rodada do Brasileirão. O atacante Gabigol, agora vestindo a camisa do Cruzeiro, terá pela frente seu ex-clube, o Flamengo. Líder invicto da competição, o Flamengo chega embalado para o confronto contra o Cruzeiro, que ocupa a quarta colocação e busca uma vitória para se aproximar do topo da tabela. A partida promete fortes emoções, especialmente pelo reencontro de Gabigol com a torcida e o time rubro-negro."
-    },
-    {
-      "id": 5,
-      "titulo": "Atlético tenta reagir no Brasileiro!",
-      "resumo": "Em situação delicada no Brasileirão, ocupando a 17ª colocação após seis rodadas e amargando a zona de rebaixamento",
-      "imagem": "/fotos/atletico.png",
-      "dataPublicacao": "03 de maio de 2025",
-      "time": "Atlético",
-      "conteudo": "Em situação delicada no Brasileirão, ocupando a 17ª colocação após seis rodadas e amargando a zona de rebaixamento, o Atlético Mineiro busca uma reação urgente. A equipe viaja até o Rio Grande do Sul para enfrentar o Juventude na próxima segunda-feira, às 20h. A partida é vista como crucial para o Galo tentar sair da incômoda posição na tabela."
-    },
-    {
-      "id": 6,
-      "titulo": "América busca 3° vitória seguida no Brasileirão",
-      "resumo": "Embalado por duas vitórias consecutivas, o América Feminino busca manter a boa fase e conquistar o terceiro triunfo seguido no Campeonato Brasileiro.",
-      "imagem": "/fotos/americafeminino.png",
-      "dataPublicacao": "03 de maio de 2025",
-      "time": "América",
-      "conteudo": "Embalado por duas vitórias consecutivas, o América Feminino busca manter a boa fase e conquistar o terceiro triunfo seguido no Campeonato Brasileiro. A equipe mineira, atualmente na 7ª colocação, enfrenta o Fluminense neste domingo (04/05), às 16h, fora de casa. O confronto é um duelo direto, já que o Fluminense ocupa a 8ª posição, com a mesma pontuação do América, prometendo um jogo equilibrado e importante para as ambições de ambas as equipes na competição."
-    }
-  ],
   "usuarios": [
     {
       "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
@@ -94,5 +18,63 @@
       "admin": false,
       "favoritos": [1, 4]
     }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Estreia com vitória na Copa do Brasil",
+      "descricao": "Com show de Kaio Jorge o Cruzeiro vence o Vila Nova no Mineirão.",
+      "imagem": "/fotos/kaiojorge.png",
+      "conteudo": "Com show de Kaio Jorge o Cruzeiro vence o Vila Nova no Mineirão. O Cruzeiro estreou com vitória segura na Copa do Brasil, batendo o Vila Nova por 2 a 0 no Mineirão. A partida não reservou grandes sustos para a torcida celeste, que viu o atacante Kaio Jorge brilhar novamente, marcando os dois gols da vitória com belos lances. O camisa nove segue sendo decisivo para a equipe.",
+      "data": "04 de maio de 2025",
+      "destaque": true
+    },
+    {
+      "id": 2,
+      "titulo": "Dudu pode pintar no Galo!",
+      "descricao": "A pedido de Cuca, Dudu pode jogar no Atlético MG",
+      "imagem": "/fotos/dudu.png",
+      "conteudo": "Após rescindir seu contrato com o Cruzeiro em meio a conflitos com a diretoria e o técnico Leonardo Jardim, o atacante Dudu pode ter um novo destino: o rival Atlético Mineiro. O técnico Cuca, que já trabalhou com o jogador no Palmeiras, teria feito um pedido à diretoria atleticana para contar com o atacante em seu elenco. A possível transferência agita o cenário do futebol mineiro.",
+      "data": "04 de maio de 2025",
+      "destaque": true
+    },
+    {
+      "id": 3,
+      "titulo": "América enfrenta Operário no Brasileirão A2",
+      "descricao": "Veja onde assistir, horário e as prováveis escalações.",
+      "imagem": "/fotos/americamg.png",
+      "conteudo": "América Busca Reabilitação Fora de Casa Contra o Operário. De Olho no Acesso, com o objetivo claro de retornar à elite do futebol brasileiro, o América enfrenta o Operário fora de casa em busca de uma vitória crucial. O Coelho precisa quebrar a sequência de resultados negativos longe de seus domínios para manter vivo o sonho do acesso à primeira divisão. A partida acontece hoje, 04 de maio, às 20h30, e terá transmissão ao vivo pelo Disney +.",
+      "data": "04 de maio de 2025",
+      "destaque": true
+    },
+    {
+      "id": 4,
+      "titulo": "Gabigol reencontra Flamengo!",
+      "descricao": "O Mineirão será palco de um reencontro emocionante hoje, às 20h30, pela sétima rodada do Brasileirão.",
+      "imagem": "/fotos/gabigol.png",
+      "conteudo": "O Mineirão será palco de um reencontro emocionante hoje, às 20h30, pela sétima rodada do Brasileirão. O atacante Gabigol, agora vestindo a camisa do Cruzeiro, terá pela frente seu ex-clube, o Flamengo. Líder invicto da competição, o Flamengo chega embalado para o confronto contra o Cruzeiro, que ocupa a quarta colocação e busca uma vitória para se aproximar do topo da tabela. A partida promete fortes emoções, especialmente pelo reencontro de Gabigol com a torcida e o time rubro-negro.",
+      "data": "04 de maio de 2025",
+      "destaque": false
+    },
+    {
+      "id": 5,
+      "titulo": "Atlético tenta reagir no Brasileiro!",
+      "descricao": "Em situação delicada no Brasileirão, ocupando a 17ª colocação após seis rodadas e amargando a zona de rebaixamento",
+      "imagem": "/fotos/atletico.png",
+      "conteudo": "Em situação delicada no Brasileirão, ocupando a 17ª colocação após seis rodadas e amargando a zona de rebaixamento, o Atlético Mineiro busca uma reação urgente. A equipe viaja até o Rio Grande do Sul para enfrentar o Juventude na próxima segunda-feira, às 20h. A partida é vista como crucial para o Galo tentar sair da incômoda posição na tabela.",
+      "data": "03 de maio de 2025",
+      "destaque": false
+    },
+    {
+      "id": 6,
+      "titulo": "América busca 3° vitória seguida no Brasileirão",
+      "descricao": "Embalado por duas vitórias consecutivas, o América Feminino busca manter a boa fase e conquistar o terceiro triunfo seguido no Campeonato Brasileiro.",
+      "imagem": "/fotos/americafeminino.png",
+      "conteudo": "Embalado por duas vitórias consecutivas, o América Feminino busca manter a boa fase e conquistar o terceiro triunfo seguido no Campeonato Brasileiro. A equipe mineira, atualmente na 7ª colocação, enfrenta o Fluminense neste domingo (04/05), às 16h, fora de casa. O confronto é um duelo direto, já que o Fluminense ocupa a 8ª posição, com a mesma pontuação do América, prometendo um jogo equilibrado e importante para as ambições de ambas as equipes na competição.",
+      "data": "03 de maio de 2025",
+      "destaque": false
+    }
+    
   ]
 }
+

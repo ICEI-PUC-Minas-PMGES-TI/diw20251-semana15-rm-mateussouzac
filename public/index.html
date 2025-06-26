@@ -9,21 +9,73 @@
 </head>
 
 <body>
-  <!-- Cabeçalho -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo centralizada -->
       <a class="navbar-brand mx-auto" href="index.html">
         <img src="/fotos/logotipo.png" alt="Logo" height="100">
       </a>
-  
-      <!-- Pesquisa à direita -->
       <form class="d-flex" role="search" id="form-pesquisa">
         <input class="form-control me-2" type="search" placeholder="Pesquisar notícias..." aria-label="Pesquisar" id="barra-pesquisa">
         <button class="btn btn-outline-light" type="submit">Buscar</button>
       </form>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro-noticia.html">Cadastrar Notícia</a> <!-- Link para tela de cadastro -->
+          </li>
+          <li class="nav-item" id="cadastro-menu-item" style="display: none;">
+            <a class="nav-link" href="cadastro-itens.html">Cadastro de Itens</a> <!-- Link para tela de cadastro de itens -->
+          </li>
+          <li class="nav-item" id="favoritos-menu-item" style="display: none;">
+            <a class="nav-link" href="favoritos.html">Meus Favoritos</a> <!-- Visível apenas se logado -->
+          </li>
+          <li class="nav-item" id="login-logout-menu-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" id="login-logout-link">Login</a> <!-- Alterna entre Login e Logout -->
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro-noticia.html">Cadastrar Notícia</a> <!-- Link para tela de cadastro -->
+          </li>
+          <li class="nav-item" id="cadastro-menu-item" style="display: none;">
+            <a class="nav-link" href="cadastro-itens.html">Cadastro de Itens</a> <!-- Link para tela de cadastro de itens -->
+          </li>
+          <li class="nav-item" id="favoritos-menu-item" style="display: none;">
+            <a class="nav-link" href="favoritos.html">Meus Favoritos</a> <!-- Visível apenas se logado -->
+          </li>
+          <li class="nav-item" id="login-logout-menu-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" id="login-logout-link">Login</a> <!-- Alterna entre Login e Logout -->
+          </li>
+        </ul>
+        
+        
+      </div>
     </div>
   </nav>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="login-form">
+            <div class="mb-3">
+              <label for="username" class="form-label">Usuário</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="password" required>
+            </div><button type="submit" class="btn btn-primary">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   
   <!-- Carrossel de Manchetes -->
   <div class="container my-4">
@@ -126,6 +178,28 @@
 
     </div>
   </div>
+  <!-- Seção de Visualização Avançada (Gráfico) -->
+  <div class="container mt-5">
+    <h1 class="mb-4">Análise de Notícias</h1>
+    <div class="card p-4">
+      <p>Confira a distribuição de notícias por time em nosso portal:</p>
+      <a href="apresentaçao.html" class="btn btn-info">Ver Gráfico de Notícias</a>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h1 class="mb-4">Sobre o Autor</h1>
+    <div class="card p-4 text-center">
+      <img src="/fotos/minhafoto.jpeg" alt="Avatar de Mateus Souza Campos" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <h3>Mateus Souza Campos</h3>
+      <p>Sou Aprendiz de TI – Infraestrutura na Alctel e estudante de Análise e Desenvolvimento de Sistemas na PUC Minas. Tenho interesse em tecnologia, desenvolvimento de software e soluções inovadoras, buscando sempre aprender e me desenvolver na área. Sou proativo, organizado e gosto de desafios que me ajudem a crescer profissionalmente.</p>
+      <p>Matrícula: 896645</p>
+      <div class="social-links mt-3">
+        <a href="https://github.com/mateussouzac" target="_blank" class="btn btn-dark mx-2"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/mateussouzac/" target="_blank" class="btn btn-primary mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <!-- Adicione outras redes sociais se desejar -->
+      </div>
+    </div>
+  </div>
 
   <!-- Rodapé -->
   <footer class="text-white text-center p-4 mt-5 bg-dark">
@@ -137,5 +211,169 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/scripts/app.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/scripts/app.js"></script>
+  <script>
+    // Lógica de Login/Logout e Favoritos (simulada no frontend)
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginLogoutLink = document.getElementById('login-logout-link');
+      const favoritosMenuItem = document.getElementById('favoritos-menu-item');
+      const loginForm = document.getElementById('login-form');
+      const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+      function checkLoginStatus() {
+        const loggedIn = localStorage.getItem('loggedInUser');
+        if (loggedIn) {
+          loginLogoutLink.textContent = `Logout (${loggedIn})`;
+          loginLogoutLink.removeEventListener('click', openLoginModal);
+          loginLogoutLink.addEventListener('click', handleLogout);
+          favoritosMenuItem.style.display = 'block';
+        } else {
+          loginLogoutLink.textContent = 'Login';
+          loginLogoutLink.removeEventListener('click', handleLogout);
+          loginLogoutLink.addEventListener('click', openLoginModal);
+          favoritosMenuItem.style.display = 'none';
+        }
+      }
+      function openLoginModal(e) {
+        e.preventDefault();
+        loginModal.show();
+      }function handleLogin(e) {
+        e.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        // Simulação de autenticação
+        if (username === 'user' && password === '123') { // Exemplo de usuário
+          localStorage.setItem('loggedInUser', username);
+          loginModal.hide();
+          checkLoginStatus();
+          alert('Login realizado com sucesso!');
+          loadNewsAndFavorites(); // Recarrega notícias para atualizar favoritos
+        } else {
+          alert('Usuário ou senha inválidos.');
+        }
+      }
+      function handleLogout(e) {
+        e.preventDefault();
+        localStorage.removeItem('loggedInUser');
+        alert('Logout realizado com sucesso!');
+        checkLoginStatus();
+        loadNewsAndFavorites(); // Recarrega notícias para atualizar favoritos
+      }
+      loginForm.addEventListener('submit', handleLogin);
+      checkLoginStatus(); // Verifica o status de login ao carregar a página
+      // Função para carregar notícias e gerenciar favoritos
+      async function loadNewsAndFavorites() {
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        let userFavorites = JSON.parse(localStorage.getItem(`favorites_${loggedInUser}`)) || [];
+        try {
+          const response = await fetch('http://localhost:3000/noticias'); // Assumindo endpoint /noticias
+          const noticias = await response.json();
+          // Carrossel de Destaques
+          const carouselInner = document.getElementById('carousel-inner-destaques');
+          carouselInner.innerHTML = '';
+          const destaques = noticias.filter(n => n.destaque);
+          destaques.forEach((noticia, index) => {
+            const carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+            if (index === 0) carouselItem.classList.add('active');
+            carouselItem.innerHTML = `<a href="detalhes.html?id=${noticia.id}">
+                <img src="${noticia.imagem}" class="d-block w-100" alt="${noticia.titulo}">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>${noticia.titulo}</h5>
+                <p>${noticia.descricao}</p>
+              </div>
+            `;
+            carouselInner.appendChild(carouselItem);
+          });
+          // Cards de Notícias
+          const noticiasCardsContainer = document.getElementById('noticias-cards-container');
+          noticiasCardsContainer.innerHTML = '';
+          noticias.forEach(noticia => {
+            const isFavorite = loggedInUser && userFavorites.includes(noticia.id);
+            const favoriteIconClass = isFavorite ? 'fas' : 'far'; // fas para preenchido, far para vazado
+            const cardHtml = `
+              <div class="col-md-4" data-title="${noticia.titulo.toLowerCase()}" data-description="${noticia.descricao.toLowerCase()}">
+                <div class="card h-100">
+                  <img src="${noticia.imagem}" class="card-img-top" alt="${noticia.titulo}">
+                  <div class="card-body">
+                    <h5 class="card-title">${noticia.titulo}</h5>
+                    <p class="card-text">${noticia.descricao}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="detalhes.html?id=${noticia.id}" class="btn btn-primary">Ler mais</a>
+                      ${loggedInUser ? `<button class="btn btn-outline-danger favorite-btn" data-id="${noticia.id}">
+                        <i class="${favoriteIconClass} fa-heart"></i>
+                      </button>` : ''}
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+            noticiasCardsContainer.insertAdjacentHTML('beforeend', cardHtml);
+          });
+          // Adiciona evento de clique para botões de favorito
+          document.querySelectorAll('.favorite-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+              const noticiaId = parseInt(e.currentTarget.dataset.id);
+              const icon = e.currentTarget.querySelector('i');
+              if (userFavorites.includes(noticiaId)) {
+                userFavorites = userFavorites.filter(id => id !== noticiaId);
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+              } else {
+                userFavorites.push(noticiaId);
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+              }
+              localStorage.setItem(`favorites_${loggedInUser}`, JSON.stringify(userFavorites));
+            });
+          });
+        } catch (error) {
+          console.error('Erro ao carregar notícias:', error);
+        }
+      }// Função de pesquisa por texto (já existente no script.js, mas adaptada para os novos cards)
+      document.getElementById("form-pesquisa").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const termo = document.getElementById("barra-pesquisa").value.toLowerCase();
+        const cards = document.querySelectorAll("#noticias-cards-container .col-md-4");
+        cards.forEach(card => {
+            const titulo = card.dataset.title;
+            const descricao = card.dataset.description;
+            if (titulo.includes(termo) || descricao.includes(termo)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+      });// Carrega as notícias e favoritos ao iniciar
+      loadNewsAndFavorites();
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    const loginLogoutLink = document.getElementById('login-logout-link');
+    const favoritosMenuItem = document.getElementById('favoritos-menu-item');
+    const loggedInUser  = JSON.parse(sessionStorage.getItem('loggedInUser '));
+    function checkLoginStatus() {
+      if (loggedInUser ) {
+        loginLogoutLink.textContent = `Logout (${loggedInUser .nome})`;
+        loginLogoutLink.removeEventListener('click', openLoginModal);
+        loginLogoutLink.addEventListener('click', handleLogout);
+        favoritosMenuItem.style.display = 'block';
+      } else {
+        loginLogoutLink.textContent = 'Login';
+        loginLogoutLink.removeEventListener('click', handleLogout);
+        loginLogoutLink.addEventListener('click', openLoginModal);
+        favoritosMenuItem.style.display = 'none';
+      }
+    }
+    function handleLogout(e) {
+      e.preventDefault();
+      sessionStorage.removeItem('loggedInUser ');
+      alert('Logout realizado com sucesso!');
+      checkLoginStatus();
+      loadNewsAndFavorites(); // Recarrega notícias para atualizar favoritos
+    }
+    checkLoginStatus(); // Verifica o status de login ao carregar a página
+  });
+  </script>
 </body>
 </html>

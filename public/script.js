@@ -22,6 +22,7 @@ window.addEventListener("load", () => {
             
         });
     });
+    
     document.addEventListener('DOMContentLoaded', function () {
         const searchInput = document.getElementById('searchInput');
         const noticias = document.querySelectorAll('.noticia');
@@ -85,9 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     card.style.display = "none";
                 }
+                
             });
         });
     });
 });
+
 
 
